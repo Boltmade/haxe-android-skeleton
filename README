@@ -1,0 +1,1 @@
+This repository is a skeleton for developing Android apps in HaXe.  The difference versus a generic Android skeleton is mostly build system changes to run the haxe compiler at the right point.

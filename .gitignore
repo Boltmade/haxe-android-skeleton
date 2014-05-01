@@ -1,0 +1,6 @@
+local.properties
+gen/
+bin/
+src/
+hxjava_build.txt
+/build.hxml

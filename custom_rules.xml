@@ -1,0 +1,17 @@
+<project name="imported" basedir="." default="">
+
+<target name="-pre-compile">
+	<exec executable="${basedir}/hxbuildgen.sh" failonerror="true" />
+	<exec executable="haxe" failonerror="true">
+		<arg value="${basedir}/build.hxml" />
+	</exec>
+</target>
+
+<target name="-pre-clean">
+	<delete includeemptydirs="true">
+		<fileset dir="${basedir}/src" includes="**/*" />
+		<fileset dir="${basedir}" includes="hxjava_build.txt" />
+		<fileset dir="${basedir}" includes="build.hxml" />
+	</delete>
+</target>
+</project>
